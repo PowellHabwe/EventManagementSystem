@@ -53,8 +53,8 @@
             <div class="row">
               {% if post.author == user %}
               <div class="col-md-8">
-                <h4>Admin &amp; Event Owner Section {{post.author_id}}</h4>
-                <p>This is the withdrawal code used to withdraw your ticket sale proceedings and is private to you only  {{ post.uuid }}</p>
+                <h4>Admin &amp; Event Owner Section </h4>
+                <p> {{post.author_id}} is the withdrawal id used to withdraw your ticket sale proceedings and is private to you only</p>
                 {% comment %} <p>Admin Withdrawal Code <em>{{ post.uuid }}<em></p> {% endcomment %}
               </div>
               <div class="col-md-4">

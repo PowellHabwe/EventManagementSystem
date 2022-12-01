@@ -646,22 +646,6 @@ def event_totals(request):
 
 
 
-            #     if check_existing and not exists:
-            #     ExistingReceipt.objects.create(
-            #         receipt = mpesa_receipt
-            #     )
-            #     return redirect("ticket_detail", pk=request.POST['ticket_no'])
-            # else:
-            #     return HttpResponse("Not Found / You have already used that receipt")
-
-
-    # else:
-    #     form = StkCall()
-    # context = {'form' : form}
-
-    # return render(request, 'events/stkinfo.html', context)
-
-
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
@@ -669,6 +653,3 @@ def get_client_ip(request):
     else:
         ip = request.META.get('REMOTE_ADDR')
     return ip
-
-# def b2c_totals(request):
-#     pass
